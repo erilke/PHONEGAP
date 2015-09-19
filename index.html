@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title> Hotel App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"
+    </head>
+    
+    <body>
+        <div data-role="page" id="home">
+	       <div data-role="header"><h1>Hotel App</h1></div>
+	       <div role="main" class="ui-content">
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#nr1">Reservar</a></li>
+                    <li><a href="#historial">Historial</a></li>
+                </ul>
+            </div>
+	       <div data-role="footer" data-position="fixed">
+                <small>Todos los derechos reservados &copy;</small>
+                <a href="#nosotros" data-transition="slideup">Nosotros</a>
+            </div>
+        </div>
+        
+        <div data-role="page" id="nosotros">
+	       <div data-role="header">
+               <h1>Nosotros</h1>
+               <a href="#" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" >Atrás</a>
+            </div>
+	       <div role="main" class="ui-content">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit ante lorem, vel iaculis erat tempus id. Proin ligula erat, dapibus ac turpis id, porttitor auctor tortor. Suspendisse ac mi arcu. Ut sagittis eros vitae nisl tincidunt, ac sodales dui efficitur. Vestibulum interdum, risus eu condimentum laoreet, metus mi finibus eros, eget bibendum turpis dui ac magna. Nulla vel nibh elementum sem lacinia sagittis. Vivamus euismod dui augue, eget ultrices ipsum malesuada in. Sed malesuada suscipit consectetur. Nullam a sem lacus. Vestibulum a feugiat dolor. Etiam sodales mattis efficitur. 
+            </div>
+	 
+        </div>
+        
+              <div data-role="page" id="reg">
+	       <div data-role="header"><h1>Registro</h1></div>
+	       <div role="main" class="ui-content">
+                <ul data-role="listview">
+                    <li><input type="text" id="regname" placeholder="Nombre"> </li>
+                    <li><input type="email" id="regmail" placeholder="Correo electrónico"></li>
+                    <li><input type="tel" id="regtel" placeholder="Teléfono"></li>
+                    <li><a href="#" id="takephoto">Tomar foto </a></li>
+                </ul>
+               <div id="regphoto"></div>
+               
+               
+            </div>
+	       <div data-role="footer">
+               <div data-role="navbar">
+                    <ul>
+                    <li><a href="#" class="ui-btn-active" id="regsend">Registrar</a></li>
+                    </ul>
+               </div><!-- /navbar -->
+            </div>
+        </div>
+        
+        
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/actions.js"></script>
+        
+        
+        
+    </body>
+</html>
