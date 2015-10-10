@@ -1,7 +1,7 @@
 var mediaCapture = {
     takePhoto: function(){
         //alert();
-        navigator.device.capture.captureImage(mediaCapture.captureSuccess, mediaCapture.captureError, {limit:2});
+        navigator.device.capture.captureImage(mediaCapture.captureSuccess, mediaCapture.captureError, {limit:1});
      },
 
     // capture callback
