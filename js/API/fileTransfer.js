@@ -13,6 +13,7 @@ var fileTransfer = {
     },
             
     sendPhoto: function(path) {
+        alert(1);
         var options = new FileUploadOptions();
         options.fileKey = "foto";
         options.fileName = "Edgar";
