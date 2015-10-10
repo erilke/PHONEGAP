@@ -20,15 +20,14 @@ var fn = {
         var nom = $('#regname').val();
         var mail = $('#regmail').val();
         var tel = $('#regtel').val();
-        var foto = $('#regPhoto').attr('rel');
+        var foto = $('#regphoto').attr('rel');
         
         //alert(nom + ' ' + mail + ' ' + tel);
         if(nom != '' && tel != '' && mail != '' && foto != undefined && foto != ''){
             alert();
             // enviar datos al servidor
             server.regsend(nom,tel,mail,foto);
-            
-            
+    
         }else{
           // alert('Todos los campos son requeridos'); 
             navigator.notification.alert('Todos los campos son requeirido',null, "Error de registro", "Aceptar");
