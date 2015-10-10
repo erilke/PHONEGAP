@@ -4,7 +4,7 @@ var fileTransfer = {
         if (r.response == "1"){
             navigator.notification.alert("Los datos se han enviado satisfactoriamente",null,"Registro correcto","Aceptar");
         }else{
-            Alert("Error");
+            alert("Error");
         }
     },
 
