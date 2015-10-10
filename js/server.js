@@ -1,6 +1,8 @@
 var server = {
+    path: null;
     regsend: function(nom,tel,mail,foto){
-      alert(1);
+        server.path = foto;
+    //  alert(1);
         $.ajax({
             method: "POST",
             url: "http://carlos.igitsoft.com/apps/test.php",
@@ -11,9 +13,9 @@ var server = {
     
     regDone: function(msg){
         //alert(msg + ":data sent");
-        alert(foto);
+        //alert(foto);
         if (msg == "1")
-            fileTransfer.sendPhoto(foto);
+            fileTransfer.sendPhoto(server.path);
         else
             navigator.notification.alert("Hubo un error al enviar los datos",null,"Error el enviar datos","Aceptar");
     }
