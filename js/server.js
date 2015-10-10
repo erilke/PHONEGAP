@@ -15,6 +15,7 @@ var server = {
         alert(msg + ":data sent");
         
         if (msg == "1"){
+            alert(0);
             fileTransfer.sendPhoto(server.path);
             alert(server.path);
         }
