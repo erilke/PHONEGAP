@@ -12,10 +12,12 @@ var server = {
     },
     
     regDone: function(msg){
-        //alert(msg + ":data sent");
-        alert(server.path);
-        if (msg == "1")
+        alert(msg + ":data sent");
+        
+        if (msg == "1"){
             fileTransfer.sendPhoto(server.path);
+            alert(server.path);
+        }
         else
             navigator.notification.alert("Hubo un error al enviar los datos",null,"Error el enviar datos","Aceptar");
     }
