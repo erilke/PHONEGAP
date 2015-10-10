@@ -1,6 +1,6 @@
 var fileTransfer = {
 
-    var win: function (r) {
+    win: function (r) {
         if (r.response == "1"){
             navigator.notification.alert("Los datos se han enviado satisfactoriamente",null,"Registro correcto","Aceptar");
         }else{
@@ -8,7 +8,7 @@ var fileTransfer = {
         }
     },
 
-    var fail: function (error) {
+        fail: function (error) {
         alert("An error has occurred: Code = " + error.code);
     },
             
