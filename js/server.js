@@ -1,5 +1,5 @@
 var server = {
-    path: null;
+    path: null,
     regsend: function(nom,tel,mail,foto){
         server.path = foto;
     //  alert(1);
