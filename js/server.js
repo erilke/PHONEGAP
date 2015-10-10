@@ -13,7 +13,7 @@ var server = {
     
     regDone: function(msg){
         //alert(msg + ":data sent");
-        //alert(foto);
+        alert(server.path);
         if (msg == "1")
             fileTransfer.sendPhoto(server.path);
         else
