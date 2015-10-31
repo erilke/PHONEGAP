@@ -13,7 +13,7 @@ var fn = {
     },
     
     islogged: function(){
-        return false;
+        return ls.estaRegistrado();
     },
     
     getRegister: function(){
@@ -30,7 +30,7 @@ var fn = {
     
         }else{
           // alert('Todos los campos son requeridos'); 
-            navigator.notification.alert('Todos los campos son requeirido',null, "Error de registro", "Aceptar");
+            navigator.notification.alert('Todos los campos son requeridos',null, "Error de registro", "Aceptar");
         }
     
     }
